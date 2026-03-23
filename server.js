@@ -1,6 +1,5 @@
-//API FRAMEWORD
+//API FRAMEWORK
 const express = require('express');
-//CROSS ORIGIN RESOURCE SHARING
 const cors = require('cors');
 //ENVIRONMENT VARIABLES
 require ('dotenv').config();
@@ -29,10 +28,11 @@ app.use(logger);
 
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({extended:true})) //this will allow to read the url body tags
+app.use(express.urlencoded({extended:true}))
 
 
-//use routes
+
+
 app.use('/api', routes)
 
 
