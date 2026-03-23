@@ -1,5 +1,3 @@
-
-
 //API FRAMEWORD
 const express = require('express');
 //CROSS ORIGIN RESOURCE SHARING
